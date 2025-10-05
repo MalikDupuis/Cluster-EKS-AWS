@@ -9,8 +9,8 @@ module "vpc" {
   public_subnets  = ["10.0.101.0/24", "10.0.102.0/24", "10.0.103.0/24"]
   intra_subnets   = ["10.0.104.0/24", "10.0.105.0/24", "10.0.106.0/24"]
 
-  enable_nat_gateway = true
-  single_nat_gateway = true
+  enable_nat_gateway     = true
+  single_nat_gateway     = true
   one_nat_gateway_per_az = false
 
   private_subnet_tags = {
@@ -23,7 +23,7 @@ module "vpc" {
 
 
   tags = {
-    Terraform = "true"
+    Terraform   = "true"
     Environment = var.environment
   }
 }

@@ -1,13 +1,13 @@
 terraform {
   backend "s3" {
     bucket = "307952838934-bucket-state-file"
-    key = "terraform.eks.tfstate"
+    key    = "terraform.eks.tfstate"
     region = "eu-west-1"
 
   }
   required_providers {
     aws = {
-      source = "hashicorp/aws"
+      source  = "hashicorp/aws"
       version = "6.14.1"
     }
   }

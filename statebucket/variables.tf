@@ -1,20 +1,20 @@
 variable "region" {
-  type = string
+  type        = string
   description = "AWS région"
-  default = "eu-west-1"
+  default     = "eu-west-1"
 }
 
 variable "aws_account_id" {
-  type = string
+  type        = string
   description = "AWS account ID"
 }
 
 variable "environment" {
-  type = string
+  type        = string
   description = "Name of the environment"
 }
 
 variable "app_name" {
-  type = string
+  type        = string
   description = "Name of the App"
 }
