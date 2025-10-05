@@ -1,0 +1,24 @@
+# === Terraform ===
+.terraform/
+**/.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+crash.log
+override.tf
+override.tf.json
+terraform.tfvars.json
+.terraform.lock.hcl
+
+# Ignore Terraform workspaces and local state data
+**/terraform.tfstate.d/
+
+# === OS / Éditeurs ===
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# === Logs & temp ===
+*.log
+tmp/
